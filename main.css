@@ -1,0 +1,29 @@
+:root {
+	--primary-color: #f7931a; /*Bitcoin orange*/
+	--primary-soft-color: #ffe9d5;
+	--secondary-color: #1a9af7;
+	--secondary-soft-color: #e7f5ff;
+	--dark-warm-color: #201e1c;
+	--dark-color: #282623;
+	--ligt-darker-color: #bababa;
+	--background-color: #faf8f7;
+	--light-color: #fff;
+
+    --font-sans:'DM Sans', sans-serif;
+	--font-inter:'Inter', sans-serif;
+	--size-300:300;
+	--size-400:400;
+	--size-500:500;
+	--size-700:700;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+	font-size: 62.5%;
+	font-family: var(--font-sans);
+}
