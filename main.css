@@ -5,16 +5,12 @@
 	--secondary-soft-color: #e7f5ff;
 	--dark-warm-color: #201e1c;
 	--dark-color: #282623;
-	--ligt-darker-color: #bababa;
+	--light-darker-color: #bababa;
 	--background-color: #faf8f7;
 	--light-color: #fff;
 
     --font-sans:'DM Sans', sans-serif;
 	--font-inter:'Inter', sans-serif;
-	--size-300:300;
-	--size-400:400;
-	--size-500:500;
-	--size-700:700;
 }
 
 * {
@@ -30,7 +26,7 @@ html {
 
 .header {
 	align-items: center;
-	background: linear-gradient(207.8deg, #201E1C 16.69%, #F7931A 100%);
+	background: linear-gradient(207.8deg, var(--dark-warm-color) 16.69%, var(--primary-color) 100%);
 	color: var(--light-color);
 	position: relative;
 	display: flex;
@@ -49,7 +45,7 @@ html {
 	width: 150px;
 }
 
-.header__title-container {
+.title-container {
 	align-self: center;
 	height: 218px;
 	margin-top: 40px;
@@ -58,17 +54,74 @@ html {
 	width: 90%;
 }
 
-.header__h1 {
+.title {
 	font-size: 2.4rem;
 	font-weight: bold;
 	line-height: 2.6rem;
 }
 
-.header__text {
+.title-container p {
 	color: var(--primary-soft-color);
 	font-size: 1.4rem;
 	font-style: normal;
-	/* font-weight: 500; */
+	font-weight: bold;
 	line-height: 1.8rem;
 	margin-top: 25px; 
+}
+
+.header__button {
+	position: absolute;
+	left: calc(50% - 115px);
+	top: calc(100% - 24px);
+	padding: 15px;
+	width: 229px;
+	height: 48px;
+	background-color: var(--background-color);
+	box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16);
+	border-radius: 5px;
+	color: var(--dark-color);
+	display: block;
+	font-size: 1.4rem;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.header__button span {
+	display: inline-block;
+	height: 8px;
+	width: 13px;
+	margin-left: 10px;
+	background-image: url(./assets/icons/down-arrow.svg);
+}
+
+main {
+	background-color: var(--light-color);
+	min-width: 320px;
+	height: auto;
+	width: 100%;
+}
+
+/*** Exchange section styles ***/
+.exchange {
+	padding: 25px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	min-width: 320px;
+	text-align: center;
+	width: 100%;
+}
+
+.exchange__background-img {
+	background-image: url(./assets/imgs/bitcoin.svg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: contain;
+	margin: 20px auto;
+	height: 200px;
+	width: 100%;
+}
+
+.exchange p {
+	color: #757575;
 }
