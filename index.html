@@ -20,63 +20,78 @@
         </div>
     </header>
     <main>
-        <section class="exchange">
-            <div class="exchange__img backgnd-img"></div>
+        <!-- Exchange section -->
+        <section class="exchange-section">
+            <div class="exchange-section__img backgnd-img"></div>
             <div class="title-container">
                 <h2 class="title">Visibilizamos todas las tasas de cambio.</h2>
-                <p class="subtile">Traemos información en tiempo real de las casas de cambio y las monedas más importantes del mundo.</p>
+                <p class="subtile subtile--grey">Traemos información en tiempo real de las casas de cambio y las monedas más importantes del mundo.</p>
             </div>
-            <div class="coins-and-fees">
+            <div class="coins-fees-container">
                 <!-- Coins table -->
-                <section class="coins-section">
-                    <h3 class="coins__title">Monedas</h3>
-                    <div class="table">
-                        <div class="table__names">
-                            <div class="table__item">Bitcoin</div>
-                            <div class="table__item">Ethereum</div>
-                            <div class="table__item">Ripple</div>
-                            <div class="table__item">Stellar</div>
+                <section class="coins-section" id="coins-table">
+                    <div class="coins-section__wrapper">
+                        <div class="table-wrapper">
+                            <h3 class="coins__title">Monedas</h3>
+                            <div class="table">
+                                <div class="table__names">
+                                    <div class="table__item">Bitcoin</div>
+                                    <div class="table__item">Ethereum</div>
+                                    <div class="table__item">Ripple</div>
+                                    <div class="table__item">Stellar</div>
+                                </div>
+                                <div class="table__prices">
+                                    <div class="table__item item--price">$ 1.96<span class="tendency tendency--down"></span></div>
+                                    <div class="table__item item--price">$ 0.07<span class="tendency tendency--up"></span></div>
+                                    <div class="table__item item--price">$ 2.15<span class="tendency tendency--down"></span></div>
+                                    <div class="table__item item--price">$ 4.96<span class="tendency tendency--down"></span></div>
+                                </div>
+                            </div>
+                            <div class="table__last-update">
+                                <b>Actualizado:</b> 19 Nov 23:45
+                            </div>
                         </div>
-                        <div class="table__prices">
-                            <div class="table__item item--price">$ 1.96<span class="tendency tendency--down"></span></div>
-                            <div class="table__item item--price">$ 0.07<span class="tendency tendency--up"></span></div>
-                            <div class="table__item item--price">$ 2.15<span class="tendency tendency--down"></span></div>
-                            <div class="table__item item--price">$ 4.96<span class="tendency tendency--down"></span></div>
+                        <div>
+                            <a href="#fees-table" ><span class="exchange__button exchange__button--right"></span></a>
                         </div>
-                    </div>
-                    <div class="table__last-update">
-                        <b>Actualizado:</b> 19 Nov 23:45
                     </div>
                 </section>
-                <div class="exchange__button exchange__button--left"></div>
                 <!-- Fees table -->
-                <section class="fees-section">
-                    <h3 class="fees__title">Comisiones</h3>
-                    <div class="table">
-                        <div class="table__names">
-                            <div class="table__item">Bitrade</div>
-                            <div class="table__item">Bitpreco</div>
-                            <div class="table__item">Novadax</div>
-                            <div class="table__item">Coinext</div>
+                <section class="fees-section" id="fees-table">
+                    <div class="fees-section__wrapper">
+                        <div>
+                            <a href="#coins-table"><span class="exchange__button exchange__button--left"></span></a>
                         </div>
-                        <div class="table__prices">
-                            <div class="table__item item--price">$ 12.96</div>
-                            <div class="table__item item--price">$ 13.07</div>
-                            <div class="table__item item--price">$ 13.15</div>
-                            <div class="table__item item--price">$ 14.96</div>
+                        <div class="table-wrapper">
+                            <h3 class="fees__title">Comisiones</h3>
+                            <div class="table">
+                                <div class="table__names">
+                                    <div class="table__item">Bitrade</div>
+                                    <div class="table__item">Bitpreco</div>
+                                    <div class="table__item">Novadax</div>
+                                    <div class="table__item">Coinext</div>
+                                </div>
+                                <div class="table__prices">
+                                    <div class="table__item item--price">$ 12.96</div>
+                                    <div class="table__item item--price">$ 13.07</div>
+                                    <div class="table__item item--price">$ 13.15</div>
+                                    <div class="table__item item--price">$ 14.96</div>
+                                </div>
+                            </div>
+                            <div class="table__last-update last-update--fees">
+                                <b>Actualizado:</b> 19 Nov 23:48
+                            </div>
                         </div>
-                    </div>
-                    <div class="table__last-update last-update--fees">
-                        <b>Actualizado:</b> 19 Nov 23:48
                     </div>
                 </section>
             </div>
         </section>
-        <section class="product">
-            <div class="product__img backgnd-img"></div>
-            <div class="title-container title-container--product">
-                <h2 class="title title--product">Creamos un producto sin comparación.</h2>
-                <p class="subtile subtile--product">Confiable y diseñado para su uso diario.</p>
+        <!-- Features section -->
+        <section class="features-section">
+            <span class="features-section__img backgnd-img"></span>
+            <div class="title-container ">
+                <h2 class="title title--features">Creamos un producto sin comparación.</h2>
+                <p class="subtile subtile--grey">Confiable y diseñado para su uso diario.</p>
             </div>
             <div class="card">
                 <div class="card__title-container">
@@ -107,11 +122,54 @@
                 <p class="card__info">Nuestras fuentes están 100% verificadas y continuamos auditando su contenido mientras se actualizan.</p>
             </div>
         </section>
-        <section></section>
-        <section></section>
+        <!-- Image section -->
+        <section class="img-section backgnd-img">
+            <h2 class="img-section__title">Conócelo hoy.</h2>
+        </section>
+        <!-- Plans section -->
+        <section class="plans-section">
+            <div class="title-container title-container--features">
+                <h2 class="title">Escoge el plan que mejor se ajuste a ti.</h2>
+                <p class="subtile subtile--grey">Cualquier plan te da acceso completo a nuestra plataforma.</p>
+            </div>
+            <section class="plans-section__slider">
+                <article tabindex="2" class="plan-card" id="monthly-payment">
+                    <div class="plan-card__info-container">
+                        <h3 class="plan-card__title">Pago Mensual</h3>
+                        <p class="plan-card__price"><span class="dollar-sign">$</span> 19</p>
+                        <p class="plan-card__details">*Pagará 129 más que con el plan anual</p>
+                        <button class="plan-card__ca">Escoger este<span class="ca__arrow backgnd-img"></span></span></button>
+                    </div>
+                </article>
+                <article tabindex="1" class="plan-card" id="annual-payment">
+                    <p class="recommendation-sign">Recomendado</p>
+                    <div class="plan-card__info-container">
+                        <h3 class="plan-card__title">Pago Anual</h3>
+                        <p class="plan-card__price"><span class="dollar-sign">$</span> 99</p>
+                        <p class="plan-card__details">*Ahorras $129 comparado al plan mensual.</p>
+                        <button class="plan-card__ca">Escoger este <span class="ca__arrow backgnd-img"></span></span></button>
+                    </div>
+                </article>
+                <article tabindex="3" class="plan-card" id="fifteen-days-payment">
+                    <div class="plan-card__info-container">
+                        <h3 class="plan-card__title">Pago por 15 días</h3>
+                        <p class="plan-card__price"><span class="dollar-sign">$</span> 14</p>
+                        <p class="plan-card__details">*Pagas $9 mas, comparado al plan mensual</p>
+                        <button class="plan-card__ca">Escoger este <span class="ca__arrow backgnd-img"></span></button>
+                    </div>
+                </article>
+            </section>
+        </section>
     </main>
-    <footer>
-
+    <footer class="footer">
+        <div class="footer__links">
+            <a href="#" class="footer__links--item">Linkedin</a>
+            <a href="#" class="footer__links--item">Crunchbase</a>
+            <a href="#" class="footer__links--item">Hackernews</a>
+        </div>
+        <div class="footer__img">
+            <img src="./assets/imgs/logo-footer.svg" alt="Batatabit logo" class="footer__img--item">
+        </div>
     </footer>
 </body>
 </html>
