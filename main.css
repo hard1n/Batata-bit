@@ -44,17 +44,9 @@ html {
 
 .header__img {
 	align-self: center;
-	height: 24px;
-	margin-top: 60px;
-	width: 150px;
-}
-
-.title-container {
-	align-self: center;
+	height: 80px;
 	margin-top: 30px;
-	max-width: 900px;
-	min-width: 288px;
-	width: 90%;
+	width: 80%;
 }
 
 .title-container--header {
@@ -93,6 +85,16 @@ main {
 }
 
 /*** Global Styles ***/
+
+.title-container {
+	align-self: center;
+	margin-top: 20px;
+	max-width: 900px;
+	min-width: 288px;
+	padding: 0 5px;
+	width: 90%;
+}
+
 .title {
 	font-size: 2.4rem;
 	font-weight: bold;
@@ -100,16 +102,16 @@ main {
 	text-align: center;
 }
 
-.subtile {
+.subtitle {
 	color: var(--primary-soft-color);
-	font-size: 1.4rem;
+	font-size: 1.6rem;
 	font-style: normal;
 	line-height: 1.8rem;
-	margin: 25px 0;
+	margin: 20px 0 25px;
 	text-align: center;
 }
 
-.subtile--grey {
+.subtitle--grey {
 	color: var(--grey-color);
 }
 
@@ -141,6 +143,7 @@ main {
 
 .coins-fees-container {
 	display: flex;
+	gap: 50%;
 	padding: 25px;
 	position: relative;
 	overflow-x: scroll;
@@ -155,13 +158,11 @@ main {
 
 .coins-section,
 .fees-section {
-	position: relative;
 	scroll-snap-align: center;
-	margin-right: 10px;
 	height: auto;
 	min-width: 300px;
 	max-width: 600px;
-	width: 90%;
+	width: 100%;
 }
 
 .coins-section__wrapper {
@@ -176,7 +177,7 @@ main {
 
 .table-wrapper {
 	margin: 0 auto;
-	min-width: 70%;
+	min-width: 80%;
 }
 
 .coins__title {
@@ -243,7 +244,8 @@ main {
 	font-size: 1.2rem;
 	margin: 0 auto;
 	padding: 8px;
-	width: 80%; 
+	max-width: 190px;
+	width: 80%;
 }
 
 .last-update--fees {
@@ -258,7 +260,7 @@ main {
 	color: var(--grey-color);
 	display: inline-block;
 	max-width: 15px;
-	height: 100%;	
+	height: 100%;
 	width: 100%;
 }
 
@@ -288,7 +290,7 @@ main {
 	height: 25px;
 	width: 40px;
 	position: absolute;
-	top: calc(5% - 55px);
+	top: calc(0% - 15px);
 	left: calc(50% - 20px);
 }
 
@@ -296,15 +298,17 @@ main {
 	color: var(--light-color);
 }
 
-.card {
+.features__card {
 	background-color: var(--secundary-soft-color);
 	border-radius: 5px;
+	box-shadow: 0px 4px 8px rgba(12, 12, 12, 0.16);
 	display: flex;
 	flex-direction: column;
 	justify-content: space-around;
 	margin: 10px auto;
 	min-height: 152px;
 	min-width: 288px;
+	max-width: 500px;
 	padding: 20px;
 	width: 90%;
 }
@@ -380,10 +384,6 @@ main {
 	justify-content: center;
 }
 
-/* .plans-section:focus-within {
-
-} */
-
 .plans-section__slider {
 	display: flex;
 	height: 316px;
@@ -400,12 +400,14 @@ main {
 .plan-card {
 	background-color: var(--light-color);
 	border-radius: 8px;
-	box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16);
+	box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.25);
 	display: inline-block;
-	margin: 15px 5px;
+	margin: 15px 10px;
 	padding: 0 15px;
 	position: relative;
+    overflow: hidden;
 	scroll-snap-align: center;
+	transition: ease-out 0.5s;
 	height: 247px;
 	min-width: 190px;
 	max-width: 300px;
@@ -413,19 +415,22 @@ main {
 }
 
 .recommendation-sign {
-	background-color: var(--primary-color);
-	border-radius: 8px;
+	background-color: var(--blue-color);
 	color: var(--light-color);
 	font-family: var(--font-inter);
 	font-size: 1.2rem;
 	font-weight: bold;
 	line-height: 1.5rem;
 	text-align: center;
-	padding: 8px;
+	padding: 4px;
 	position: absolute;
-	top: -15px;
-	left: calc(50% - 60px);
-	width: 120px;
+	width: 14rem;
+    top: 25px;
+    right: -32px;
+    transform: rotate(45deg);
+	/* top: -15px;
+	left: calc(50% - 60px); */
+	/* width: 120px; */
 }
 
 .plan-card__info-container {
@@ -438,7 +443,7 @@ main {
 }
 
 .plan-card__title {
-	font-size: 1.6rem;
+	font-size: 1.8rem;
 	line-height: 18px;
 	margin: 35px 0 10px;
 }
@@ -463,11 +468,13 @@ main {
 	background-color: var(--light-background-color);
 	border: 2px solid var(--primary-color);
 	border-radius: 4px;
+	box-shadow: inset 0 0 0 0 var(--blue-soft-color);
 	color: var(--secundary-color);
 	font-size: 1.4rem;
 	font-weight: bold;
 	line-height: 1.8rem;
 	text-align: center;
+	transition: ease-out 0.3s;
 	vertical-align: text-bottom;
 	height: 48px;
 	width: 150px;
@@ -489,10 +496,9 @@ main {
 
 .footer {
 	background-color: var(--primary-color);
-	display: grid;
-	grid-template-columns: repeat(2, 1fr);
-	padding: 35px 40px;
-	text-align: center;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
 	height: 150px;
 	width: 100%;
 }
@@ -512,10 +518,10 @@ main {
 	text-decoration: none;
 }
 
-.footer__img {
-	text-align: right;
+.footer__links--item:hover {
+	text-decoration: underline;
 }
 
 .footer__img--item {
-	height: 100%;
+	width: 100px;
 }
