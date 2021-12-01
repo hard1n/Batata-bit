@@ -361,7 +361,7 @@ main {
 
 /*** Image section Styles ***/
 .img-section {
-	background-image: url(../assets/imgs/bitcoinbaby2x.jpg);
+	background-image: url(../assets/imgs/bitcoin-person.webp);
 	background-size: cover;
     background-attachment: fixed;
 	height: 60vh;
@@ -526,6 +526,6 @@ main {
 	text-decoration: underline;
 }
 
-.footer__img--item {
+.footer__img-container {
 	width: 90px;
 }
